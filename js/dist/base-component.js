@@ -47,6 +47,8 @@
         this[propertyName] = null;
       }
     }
+
+    // Private
     _queueCallback(callback, element, isAnimated = true) {
       index_js.executeAfterTransition(callback, element, isAnimated);
     }
